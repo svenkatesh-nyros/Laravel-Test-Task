@@ -1,4 +1,5 @@
 
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
@@ -16,10 +17,19 @@ This is a sample laravel application which backups multiple databases on single 
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-## install
+## Configure
+
+Go to this file `/app/Http/Controllers/BackupController.php`
+This is database names array `$databases=array("users", "students", "books");`.
+Modify this array with your database names which you want to take backup.
+This is the stored path of backup files `/home/Desktop/bak/`.
+Change this to your desired location  
+
+## Install
 
 Install and run using `composer` and using this command `php artisan serve`.
 It will run on port `http://127.0.0.1:8000`
+
 
 ## License
 
