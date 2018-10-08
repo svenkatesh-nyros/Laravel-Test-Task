@@ -30,6 +30,11 @@ Change this to your desired location
 Install and run using `composer` and using this command `php artisan serve`.
 It will run on port `http://127.0.0.1:8000`
 
+## Database Connection
+Go to the '/app/Http/Controllers/BackupController.php` file and configure your phpmyadmin credentials like this below.
+
+ mysqldump -u root -proot // here user name and password is "root"
+ mysqldump -u ["your phpmyadmin user name" -p"phpmyadmin password"]
 
 ## License
 
